@@ -87,6 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper{
+     width: 90%;
+     margin: 50px 0;
+   }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
    header,
@@ -97,16 +101,22 @@ textarea {
      flex-flow: row wrap;
    }
 
+   .header-divider{
+    width: 100%;
+   }
+
    header nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
+    width: 60%;
    }
 
    header nav ul{
     display: flex;
     justify-content: space-around;
+    width: 100%;
    }
 
    header .content-wrapper{
@@ -126,6 +136,11 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+   }
+
+   footer .content-wrapper{
+     width: 55%;
+     margin: 50px 0;
    }
 
    /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -155,11 +170,20 @@ textarea {
      flex-flow: row wrap;
    }
 
+   .features article{
+     width: 62%;
+     margin: 30px 0;
+   }
+
    .reviews{
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
    }
+
+  .reviews h3{
+    width: 55%;
+  }
 
    /* --------------------- About Page -------------------------------------- */
 
