@@ -125,7 +125,7 @@ textarea {
    
   p {
     font-size: 0.875em;
-    line-height: 18px;
+    line-height: 1.285;
   }
    
   img {
@@ -304,7 +304,6 @@ textarea {
      background: url(../img/people.jpg);
      background-size: cover;
      background-position: center;
-     min-height: 1450px;
    }
 
    .features h2{
@@ -343,6 +342,7 @@ textarea {
 
   .reviews h3{
     width: 55%;
+    margin: 20px 0;
   }
 
    /* --------------------- About Page -------------------------------------- */
@@ -503,9 +503,20 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /****TABLET STYLES****/
+
 .content-wrapper{
   max-width: 640px;
   margin: 100px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
 }
 
 header{
@@ -553,7 +564,7 @@ aside .content-wrapper{
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 40%;
+  width: 35%;
   margin: 0;
 }
 
@@ -570,7 +581,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description{
-  width: 63%;
+  width: 62%;
 }
 
 .reviews h2{
@@ -637,6 +648,10 @@ footer .copyright{
 
 .mission-content p{
   width: 45%;
+}
+
+.map figure{
+padding-bottom: 45.5%
 }
 
 .contact-section .content-wrapper h2{
@@ -712,7 +727,7 @@ aside .content-wrapper{
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form{
-  width: 30%;
+  width: 40%;
 }
 
 .form-description p {
@@ -741,6 +756,10 @@ footer h4 {
 
 
 /*ABOUT PAGE*/
+.map figure{
+  padding-bottom: 37%;
+}
+
 .mission h2,
 .contact-section .content-wrapper h2{
   width: 95%;
