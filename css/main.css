@@ -133,7 +133,7 @@ textarea {
   }
    
   figure {
-   
+    margin: 0;
   }
    
   address {
@@ -172,6 +172,14 @@ textarea {
     justify-content: center;
     flex-flow: row wrap;
     margin: 0;
+   }
+
+   header figure{
+     width: 60%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: row wrap;
    }
 
    .header-divider{
@@ -242,6 +250,10 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
    }
 
    .hero-area h1{
@@ -289,6 +301,10 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url(../img/people.jpg);
+     background-size: cover;
+     background-position: center;
+     min-height: 1450px;
    }
 
    .features h2{
@@ -481,6 +497,10 @@ header{
   padding: 33px 0;
 }
 
+header figure{
+  width: 30%;
+}
+
 header .content-wrapper{
   width: 100%;
   justify-content: space-between;
@@ -498,6 +518,16 @@ header nav ul{
   display: none;
 }
 
+.hero-area{
+  min-height: 600px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
 aside .content-wrapper{
   display: flex;
   justify-content: space-between;
@@ -507,9 +537,13 @@ aside .content-wrapper{
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 41%;
+  width: 40%;
+  margin: 0;
 }
 
+.features h2{
+  margin-bottom: 20px;
+}
 
 .features article{
   display: flex;
@@ -520,7 +554,11 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description{
-  width: 50%;
+  width: 63%;
+}
+
+.reviews h2{
+  width: 85%;
 }
 
 .reviews article{
@@ -528,8 +566,14 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
+.reviews article figure,
 .reviews article div{
   width: 49%;
+}
+
+.reviews h3{
+  width: 75%;
+  margin: 0;
 }
 
 footer .content-wrapper{
@@ -537,7 +581,14 @@ footer .content-wrapper{
   width: 65%;
 }
 
-.footer-content{
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -545,6 +596,15 @@ footer .content-wrapper{
 
 footer .contact{
   margin-bottom: 0;
+}
+
+footer h4{
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.285;
 }
 
 footer .copyright{
@@ -573,6 +633,10 @@ footer .copyright{
   justify-content: space-between;
 }
 
+.contact-content h4 {
+  font-size: 1.5em;
+}
+
 /*FAQ Page*/
 .faq .content-wrapper{
   justify-content: space-between;
@@ -586,18 +650,44 @@ footer .copyright{
   width: 100%;
 }
 
+.faq h4,
+.faq p {
+  font-size: .875em;
+  line-height: 1.125;
+}
+
 }
 
 
 
 @media only screen and (min-width: 1200px) {
   /****DESKTOP STYLES****/
+
+header{
+  padding: 15px 0;
+}
+
 .content-wrapper{
   max-width: 960px;
 }
 
+h2{
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
 .hero-area h1{
-  width: 60%;
+  width: 80%;
+  font-size: 3.75em;
 }
 
 aside .content-wrapper{
@@ -607,6 +697,10 @@ aside .content-wrapper{
 aside .content-wrapper .form-description,
 aside .content-wrapper .form{
   width: 30%;
+}
+
+.form-description p {
+  font-size: 1.125em;
 }
 
 .features h2{
@@ -621,19 +715,36 @@ aside .content-wrapper .form{
   width: 42%;
 }
 
-footer .content-wrapper{
-  width: 80%;
+.reviews h2 {
+  padding-bottom: 50px;
 }
+
+footer h4 {
+  font-size: 1.875em;
+}
+
 
 /*ABOUT PAGE*/
 .mission h2,
 .contact-section .content-wrapper h2{
   width: 95%;
+  font-size: 3em;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
 }
 
 /*FAQ PAGE*/
 .faq h2{
   width: 100%;
+  font-size: 3em;
+}
+
+.faq h4,
+.faq p {
+    font-size: 1.125em;
+    line-height: 1;
 }
 
 }
