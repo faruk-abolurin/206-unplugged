@@ -229,7 +229,11 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+    background-color: #527158;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+   } 
 
    footer .content-wrapper{
      width: 55%;
@@ -589,6 +593,10 @@ aside .content-wrapper .form {
   width: 62%;
 }
 
+.features i{
+  margin-bottom: 30px;
+}
+
 .reviews h2{
   width: 85%;
 }
@@ -637,6 +645,11 @@ footer h4{
 
 footer p {
   line-height: 1.285;
+}
+
+footer .social-icons{
+  width: 12.5em;
+  justify-content: space-between;
 }
 
 footer .copyright{
